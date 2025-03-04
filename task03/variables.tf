@@ -1,23 +1,35 @@
 variable "rg_name" {
-  default = "cmaz-93253787-mod3-rg"
+  description = "Name of the Azure Resource Group"
+  type        = string
+  default     = "cmaz-93253787-mod3-rg"
 }
 
 variable "storageaccount_name" {
-  default = "cmaz93253787sa"
+  description = "Name of the Azure Storage Account"
+  type        = string
+  default     = "cmaz93253787sa"
 }
 
 variable "vnet_name" {
-  default = "cmaz-93253787-mod3-vnet"
+  description = "Name of the Azure Virtual Network"
+  type        = string
+  default     = "cmaz-93253787-mod3-vnet"
 }
 
 variable "subnet1_name" {
-  default = "frontend"
+  description = "Name of the first subnet in the virtual network"
+  type        = string
+  default     = "frontend"
 }
 
 variable "subnet2_name" {
-  default = "backend"
+  description = "Name of the second subnet in the virtual network"
+  type        = string
+  default     = "backend"
 }
 
 variable "student_email" {
-  default = "maddeni_uday@epam.com"
+  description = "Email of the student who created the resources"
+  type        = string
+  default     = "maddeni_uday@epam.com"
 }
